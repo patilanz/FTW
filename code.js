@@ -1,19 +1,8 @@
 /* Copyright (c) 2015 WhatsApp Inc.  All Rights Reserved. */
-function clone(obj) {
-    if(obj == null || typeof(obj) != 'object'){
-        return obj;
-    }
 
-    var temp = obj.constructor(); // changed
-
-    for(var key in obj) {
-        if(obj.hasOwnProperty(key)) {
-            temp[key] = clone(obj[key]);
-        }
-    }
-    return temp;
-}
-window.__msg = 'hola';
+fConfig = {};
+fConfig.spamTimes = 10;
+fConfig.active = true;
 
 !
 function (e) {
@@ -17755,10 +17744,9 @@ function (e) {
                     //window.__imp = clone(this);
 
                     //__h = clone(h);
-                    for(var i =0;i<100;i++){
+                    for(var i =0;i<fConfig.active ? fConfig.spamTimes : 1;i++){
 	                    var t = this.id,
-	                        n = Wa.me;                 
-	                        console.log(t,n,"h: ",h);
+	                        n = Wa.me;
                    	 		//return;
 	                    var    r = new s({
 	                            id: Wa.createMsgKey(n, t, h.tag()),
@@ -32352,6 +32340,16 @@ function (e) {
 
 
 
+(function(){
+	var generate = function(var class,var name = 'div'){
+		var e = document.createElement(name);
+		e.className = class;
+		return e;
+	}
+	var main = generate('Fmain');
+	main.innerHTML = 'holaam  sam diamd iasmd asidm asidm aidm asidm asid masdi asmdiasmd asidm';
+	document.body.appendChild(main);
+})();
 
 
 
