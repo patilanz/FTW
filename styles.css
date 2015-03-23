@@ -107,10 +107,11 @@
 	margin:5px;
 }
 
-#Ftime{
+.planner input[type="number"]{
 	border:none;
 	text-align:center;
 	outline:none;
+	width:auto;
 }
 
 #FtimeType{
