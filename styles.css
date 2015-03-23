@@ -99,7 +99,7 @@
 }
 
 
-#Freceivers{
+#Freceivers, #FmsgTimer{
 	width:calc(100% - 52px);
 	padding:5px;
 	height:200px;
