@@ -118,3 +118,8 @@
 	width:142px;
 	-webkit-appearance: menulist !important;
 }
+
+
+.FchatPlannerActive{
+	background:#45DBDB;
+}
